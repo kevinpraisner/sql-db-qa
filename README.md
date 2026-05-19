@@ -1,4 +1,3 @@
-```markdown
 # 🗃️ QA Database Portfolio — SQL Server
 
 Banco de dados relacional construído do zero para demonstrar proficiência em **SQL Server**, modelagem relacional e análise de dados aplicada ao contexto de Quality Assurance.
@@ -20,7 +19,7 @@ Decisões de design relevantes:
 
 ### Diagrama de Entidade-Relacionamento
 
-![Diagrama ER](docs/fk_overview.png)
+![Diagrama ER](docs/fk_overview.jpg)
 
 ---
 
@@ -80,7 +79,7 @@ Execute os scripts na ordem abaixo:
 
 Query: `04_analises/01_metricas_sprint.sql`
 
-![Métricas por Sprint](docs/metricas_sprint.png)
+![Métricas por Sprint](docs/metricas_sprint.jpg)
 
 A Sprint 01 iniciou com 100% de aprovação. A qualidade caiu progressivamente até a Sprint 03 (33% de aprovação, 3 defeitos) e começou a se recuperar na Sprint 05.
 
@@ -90,7 +89,7 @@ A Sprint 01 iniciou com 100% de aprovação. A qualidade caiu progressivamente a
 
 Query: `04_analises/02_defect_escape_rate.sql`
 
-![Defect Escape Rate](docs/defect_escape_rate.png)
+![Defect Escape Rate](docs/defect_escape_rate.jpg)
 
 Sprint 03 registrou **33% de escape rate** e Sprint 04 **50%** — ambas concentraram defeitos críticos nos componentes de Gestão de Contratos e Notificações.
 
@@ -100,7 +99,7 @@ Sprint 03 registrou **33% de escape rate** e Sprint 04 **50%** — ambas concent
 
 Query: `04_analises/05_ranking_componentes.sql`
 
-![Ranking de Componentes](docs/ranking_componentes.png)
+![Ranking de Componentes](docs/ranking_componentes.jpg)
 
 **Gestão de Contratos** lidera com 3 defeitos, sendo 66% classificados como críticos e 1 escapado para produção — sinalizando necessidade de maior cobertura de testes neste módulo.
 
@@ -137,10 +136,10 @@ A query de análise de defeitos por sprint foi executada com e sem o índice `IX
 | Com índice | Index Seek |
 
 **Antes:**
-![Execution Plan sem índice](docs/before_index.png)
+![Execution Plan sem índice](docs/before_index.jpg)
 
 **Depois:**
-![Execution Plan com índice](docs/after_index.png)
+![Execution Plan com índice](docs/after_index.jpg)
 
 Scripts: `05_performance/before_index.sql` e `05_performance/after_index.sql`
 
